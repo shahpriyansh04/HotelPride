@@ -1,3 +1,4 @@
+import { usePathname } from "next/navigation";
 import { Button } from "./ui/button";
 import {
   Card,
@@ -7,11 +8,22 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export default function Room() {
+  const pathname = usePathname();
   return (
     <div className="px-48 py-24">
-      <h1 className="text-center font-bold text-5xl">Rooms</h1>
+      <h1
+        className={cn(
+          "text-center font-bold",
+          pathname === "/rooms" && "text-5xl",
+          pathname === "/" && "text-3xl"
+        )}
+      >
+        Rooms
+      </h1>
       <div className="grid grid-cols-3 gap-12 mt-10">
         <RoomCard />
         <RoomCard />
@@ -39,7 +51,9 @@ function RoomCard() {
         </CardDescription>
       </CardContent>
       <CardFooter className="flex  w-full">
-        <Button className="w-full">Book Now</Button>
+        <Button className="w-full">
+          <Link href="/room/deluxe">Book Now</Link>
+        </Button>
       </CardFooter>
     </Card>
   );
