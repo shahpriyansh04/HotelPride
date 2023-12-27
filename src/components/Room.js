@@ -25,35 +25,45 @@ export default function Room() {
         Rooms
       </h1>
       <div className="grid grid-cols-3 gap-12 mt-10">
-        <RoomCard />
-        <RoomCard />
-        <RoomCard />
+        <RoomCard
+          title="Non AC Room"
+          image="https://picsum.photos/640/300"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          voluptatem."
+        />
+        <RoomCard
+          title="Deluxe Room"
+          image="https://picsum.photos/640/300"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          voluptatem."
+        />
+        <RoomCard
+          title="Executive Room"
+          image="https://picsum.photos/640/300"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          voluptatem."
+        />
       </div>
     </div>
   );
 }
 
-function RoomCard() {
+function RoomCard({ title, image, description }) {
   return (
     <Card className="">
-      <img
-        src="https://picsum.photos/640/300"
-        alt="room"
-        className="p-0 rounded-t-md"
-      />
+      <img src={image} alt="room" className="p-0 rounded-t-md" />
       <CardHeader className="">
-        <CardTitle className="text-2xl">Room 1</CardTitle>
+        <CardTitle className="text-2xl">{title}</CardTitle>
       </CardHeader>
       <CardContent>
         <CardDescription className="text-gray-500 -mt-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptatem.
+          {description}
         </CardDescription>
       </CardContent>
       <CardFooter className="flex  w-full">
-        <Button className="w-full">
-          <Link href="/room/deluxe">Book Now</Link>
-        </Button>
+        <Link href="/room/deluxe" className="w-full">
+          <Button className="w-full">View More</Button>
+        </Link>
       </CardFooter>
     </Card>
   );

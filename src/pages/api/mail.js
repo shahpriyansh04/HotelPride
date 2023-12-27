@@ -4,6 +4,6 @@ import { mail } from "@/lib/mail";
 
 export default function handler(req, res) {
   const result = mail();
-  if (result) res.status(200).json({ name: "John Doe" });
+  if (result) res.status(200).json({ message: "Successfull" });
   else res.status(200).json({ name: "Failed" });
 }

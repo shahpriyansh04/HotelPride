@@ -60,9 +60,11 @@ export default function Deluxe() {
 
         <div className="flex items-center justify-between mt-20">
           <p className="text-3xl font-bold">₹4000</p>
-          <Button size="lg" className="text-lg">
-            <Link href="/contact">Contact Us</Link>
-          </Button>
+          <Link href="/contact">
+            <Button size="lg" className="text-lg">
+              Contact Us
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

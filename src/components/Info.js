@@ -53,7 +53,7 @@ export default function Info() {
 
           <CardContent>
             <p>Phone: +91 9819914047</p>
-            <p>Email:hotelpride05@gmail.com</p>
+            <p>Email: hotelpride05@gmail.com</p>
           </CardContent>
         </Card>
         <Card className="w-[350px]  ">
