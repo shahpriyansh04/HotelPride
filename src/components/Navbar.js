@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header className="px-4 py-10 w-full lg:px-6 h-16 flex items-center bg-white shadow-md">
+    <header className="px-4 py-10 w-full lg:px-12 h-16 flex items-center bg-white shadow-md">
       <Link className="flex items-center justify-center" href="/">
         <HotelIcon className="h-6 w-6" />
         <span className="mx-2 text-2xl font-semibold">Hotel Pride</span>
