@@ -15,13 +15,7 @@ export default function Navbar() {
         >
           Rooms
         </Link>
-        <Link
-          className="text-lg font-medium hover:underline underline-offset-4"
-          href="/gallery"
-          prefetch
-        >
-          Gallery
-        </Link>
+
         <Link
           className="text-lg font-medium hover:underline underline-offset-4"
           href="/location"

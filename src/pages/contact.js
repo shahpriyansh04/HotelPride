@@ -29,7 +29,7 @@ export default function Contact() {
       <Toaster position="bottom-center" />
       <div className="flex items-start justify-center py-28 gap-20 max-w-4xl mx-auto">
         <Card className="w-full p-5">
-          <h1 className="text-3xl font-semibold text-center">Details</h1>
+          <h1 className="text-2xl font-semibold text-center">Details</h1>
           <div className="flex flex-col mt-12 gap-5">
             <div>
               <p className="text-xl font-regular">Phone</p>
