@@ -10,7 +10,12 @@ export default function ImageCarousel() {
       showArrows
       infiniteLoop
     >
-      <div className="h-[45rem] ">
+      <div
+        className="h-[45rem] "
+        onClick={() => {
+          console.log("gello");
+        }}
+      >
         <img src="https://picsum.photos/640/300" />
       </div>
       <div className="h-[45rem] ">

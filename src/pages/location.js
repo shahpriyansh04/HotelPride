@@ -11,7 +11,7 @@ import { CardHeader, CardContent, Card } from "@/components/ui/card";
 export default function Location() {
   return (
     <div className="h-screen">
-      <div className="flex flex-col h-full justify-center items-center w-full px-60 py-6 gap-6">
+      <div className="flex flex-col justify-center items-center  lg:px-60 px-6  py-6 gap-6">
         <div className="w-full h-full">
           <h1 className="text-3xl font-semibold text-center my-6">Location</h1>
           <iframe

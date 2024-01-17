@@ -27,7 +27,7 @@ export default function Contact() {
   return (
     <div>
       <Toaster position="bottom-center" />
-      <div className="flex items-start justify-center py-28 gap-20 max-w-4xl mx-auto">
+      <div className="md:flex-row flex-col flex items-start  justify-center py-12 md:py-28  px-6 md:space-x-20 md:space-y-0 space-y-12 md:max-w-4xl mx-auto">
         <Card className="w-full p-5">
           <h1 className="text-2xl font-semibold text-center">Details</h1>
           <div className="flex flex-col mt-12 gap-5">
@@ -92,11 +92,13 @@ export default function Contact() {
               />
             </div>
           </CardContent>
-          <CardDescription className="pb-2 text-center">
+          <CardDescription className="pb-2 text-center text-xs">
             We will get back to you as soon as possible.
           </CardDescription>
           <CardFooter className="flex flex-col gap-4">
-            <Button className="w-full">Submit</Button>
+            <Button className="w-full" onClick={handleClick}>
+              Submit
+            </Button>
           </CardFooter>
         </Card>
       </div>

@@ -1,13 +1,24 @@
+import { cn } from "@/lib/utils";
+import { CrossIcon, MenuIcon, X } from "lucide-react";
 import Link from "next/link";
+import { useRef, useState } from "react";
+import { slide as Menu } from "react-burger-menu";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const navbarRef = useRef(null);
+  const handleClick = () => {
+    navbarRef.current.style.setProperty("width", "100%");
+    setIsOpen(true);
+  };
   return (
-    <header className="px-4 py-10 w-full lg:px-12 h-16 flex items-center bg-white shadow-md">
+    <header className="px-4 py-10 w-full lg:px-12 h-16 flex items-center justify-between bg-white shadow-md">
       <Link className="flex items-center justify-center" href="/">
         <HotelIcon className="h-6 w-6" />
         <span className="mx-2 text-2xl font-semibold">Hotel Pride</span>
       </Link>
-      <nav className="ml-auto flex gap-4 sm:gap-6">
+      <MenuIcon onClick={handleClick} className="sm:hidden" />
+      <nav className="ml-auto  gap-4 sm:gap-6 hidden sm:flex">
         <Link
           className="text-lg font-medium hover:underline underline-offset-4"
           href="/rooms"
@@ -31,6 +42,64 @@ export default function Navbar() {
           Contact
         </Link>
       </nav>
+
+      <div
+        ref={navbarRef}
+        className={cn(
+          "hidden absolute top-0 z-[99999] left-0 bg-gray-100 w-[calc(100%-240px)] transition-all ease-in-out duration-300 ",
+          isOpen && "h-screen block transition-all ease-in-out duration-300"
+        )}
+      >
+        <X
+          className="absolute top-0 right-0 h-6 w-6 m-6 cursor-pointer"
+          onClick={() => {
+            setIsOpen(false);
+          }}
+        />
+        <div className="flex py-20 gap-8 flex-col items-center">
+          <Link
+            className="text-2xl font-medium hover:underline underline-offset-4"
+            href="/"
+            onClick={() => {
+              setIsOpen(false);
+            }}
+            prefetch
+          >
+            Home
+          </Link>
+          <Link
+            className="text-2xl font-medium hover:underline underline-offset-4"
+            href="/rooms"
+            onClick={() => {
+              setIsOpen(false);
+            }}
+            prefetch
+          >
+            Rooms
+          </Link>
+
+          <Link
+            className="text-2xl font-medium hover:underline underline-offset-4"
+            href="/location"
+            onClick={() => {
+              setIsOpen(false);
+            }}
+            prefetch
+          >
+            Location
+          </Link>
+          <Link
+            className="text-2xl font-medium hover:underline underline-offset-4"
+            href="/contact"
+            onClick={() => {
+              setIsOpen(false);
+            }}
+            prefetch
+          >
+            Contact
+          </Link>
+        </div>
+      </div>
     </header>
   );
 }

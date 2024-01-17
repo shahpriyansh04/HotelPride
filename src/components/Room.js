@@ -14,17 +14,18 @@ import Link from "next/link";
 export default function Room() {
   const pathname = usePathname();
   return (
-    <div className="px-48 py-24">
+    <div className="xl:px-48 px-12 py-24">
       <h1
         className={cn(
           "text-center font-bold",
-          pathname === "/rooms" && "text-5xl",
+          pathname === "/rooms" && "text-3xl md:text-5xl",
           pathname === "/" && "text-3xl"
         )}
       >
         Rooms
       </h1>
-      <div className="grid grid-cols-3 gap-12 mt-10">
+
+      <div className="grid lg:grid-cols-3 grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
         <RoomCard
           title="Non AC Room"
           image="https://picsum.photos/640/300"
@@ -51,7 +52,7 @@ export default function Room() {
 function RoomCard({ title, image, description }) {
   return (
     <Card className="">
-      <img src={image} alt="room" className="p-0 rounded-t-md" />
+      <img src={image} alt="room" className="p-0 rounded-t-md " />
       <CardHeader className="">
         <CardTitle className="text-2xl">{title}</CardTitle>
       </CardHeader>
