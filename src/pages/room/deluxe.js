@@ -7,7 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.css"; // requires a loader
 
 export default function Deluxe() {
   return (
-    <div className="grid grid-cols-2 h-[35rem] justify-items-start  px-60 py-16 gap-12">
+    <div className="grid md:grid-cols-2 grid-cols-1 sm:h-[15rem] lg:h-[35rem] justify-items-start px-12 xl:px-60 py-16 gap-12">
       <div className="w-full  h-full">
         <Carousel
           autoPlay
@@ -16,27 +16,27 @@ export default function Deluxe() {
           showArrows
           infiniteLoop
         >
-          <div className="h-[35rem] ">
+          <div className="lg:h-[35rem]sm:h-[15rem] ">
             <img src="https://picsum.photos/350" />
           </div>
-          <div className="h-[35rem] ">
+          <div className="lg:h-[35rem] sm:h-[15rem]">
             <img src="https://picsum.photos/350" />
           </div>
-          <div className="h-[35rem] ">
+          <div className="lg:h-[35rem] sm:h-[15rem]">
             <img src="https://picsum.photos/350" />
           </div>
-          <div className="h-[35rem] ">
+          <div className=" lg:h-[35rem] sm:h-[15rem]">
             <img src="https://picsum.photos/350" />
           </div>
-          <div className="h-[35rem] ">
+          <div className="lg:h-[35rem] sm:h-[15rem] ">
             <img src="https://picsum.photos/350" />
           </div>
-          <div className="h-[35rem] ">
+          <div className="lg:h-[35rem] sm:h-[15rem]">
             <img src="https://picsum.photos/350" />
           </div>
         </Carousel>
       </div>
-      <div className="w-full  flex flex-col h-[35rem]  justify-between">
+      <div className="w-full lg:h-[35rem] sm:h-[15rem] flex flex-col   justify-between">
         <div>
           <h1 className="text-4xl font-bold">Deluxe Room</h1>
 
