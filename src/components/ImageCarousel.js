@@ -24,7 +24,7 @@ export default function ImageCarousel() {
         <img src="/CAROUSEL/4.jpeg" className="h-[45rem] object-cover" />
       </div>
       <div className="h-[45rem] ">
-        <img src="/CAROUSEL/5.jpg" className="h-[45rem] object-cover" />
+        <img src="/CAROUSEL/5.JPG" className="h-[45rem] object-cover" />
       </div>
       <div className="h-[45rem] ">
         <img src="/CAROUSEL/6.jpeg" className="h-[45rem] object-cover" />
