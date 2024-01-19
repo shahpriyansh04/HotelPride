@@ -29,7 +29,7 @@ export default function Room() {
         <RoomCard
           title="Non AC Room"
           link="non-ac"
-          image="/NON AC ROOMs/1.jpeg"
+          image="/NON AC ROOMS/1.jpeg"
           description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
           voluptatem."
         />
