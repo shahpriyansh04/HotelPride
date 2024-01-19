@@ -53,8 +53,8 @@ export default function Contact() {
             </div>
             <div className="font-regular text-xl">
               Timings:
-              <p className="text-lg font-semibold">Check In : 12PM</p>
-              <p className="text-lg font-semibold">Check Out : 11AM</p>
+              <p className="text-lg font-semibold">Check In : 12:00 PM</p>
+              <p className="text-lg font-semibold">Check Out : 11:00 AM</p>
             </div>
           </div>
         </Card>

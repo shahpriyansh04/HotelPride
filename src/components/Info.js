@@ -9,10 +9,12 @@ import {
 
 export default function Info() {
   return (
-    <div className="px-48   ">
-      <div className="mt-12 flex-1 flex  h-full">
+    <div className="px-60 bg-[#A59481] py-12 ">
+      <div className="mt-12 flex-1 flex-col space-y-6  h-full">
         <div className="flex-1">
-          <h1 className="text-3xl font-bold">Welcome to Hotel Pride</h1>
+          <h1 className="text-3xl font-bold text-center">
+            Welcome to Hotel Pride
+          </h1>
           <p className="mt-6 text-lg">
             Hotel Pride, is just the answer to every business traveler’s need.
             Located in the happening suburb of Bhandup, the hotel has the
@@ -25,7 +27,7 @@ export default function Info() {
 
         <div className="flex-1 ">
           <h1 className="text-3xl font-bold text-center">Our Amenities</h1>
-          <div className="grid grid-cols-2 gap-y-10 justify-items-start mt-6 ml-12">
+          <div className="gr id flex grd -cols-4 gap-y-  justify-items-start mt-6 w-full justify-between s-center">
             <div className="flex items-center gap-4">
               <ParkingSquare height={""} className="w-8 aspect-square " />
               <p className="text-xl">Free Parking</p>
@@ -45,7 +47,7 @@ export default function Info() {
           </div>
         </div>
       </div>
-      <div className="mt-20 flex-1  flex  gap-6  items-center justify-between ">
+      {/* <div className="mt-20 flex-1  flex  gap-6  items-center justify-between ">
         <Card className="w-[350px]  ">
           <CardHeader>
             <CardTitle>Contact</CardTitle>
@@ -72,11 +74,11 @@ export default function Info() {
           </CardHeader>
 
           <CardContent>
-            <p>Check In : 12PM</p>
-            <p>Check Out : 12PM</p>
+            <p>Check In : 12:00 PM</p>
+            <p>Check Out : 11:00 AM</p>
           </CardContent>
         </Card>
-      </div>
+      </div> */}
     </div>
   );
 }

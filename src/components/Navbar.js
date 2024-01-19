@@ -12,7 +12,7 @@ export default function Navbar() {
     setIsOpen(true);
   };
   return (
-    <header className="px-4 py-10 w-full lg:px-12 h-16 flex items-center justify-between bg-white shadow-md">
+    <header className="px-4 py-10 w-full lg:px-12 h-16 flex items-center justify-between  bg-white text-[#926f34] shadow-md">
       <Link className="flex items-center justify-center" href="/">
         <HotelIcon className="h-6 w-6" />
         <span className="mx-2 text-2xl font-semibold">Hotel Pride</span>
@@ -27,6 +27,13 @@ export default function Navbar() {
           Rooms
         </Link>
 
+        <Link
+          className="text-lg font-medium hover:underline underline-offset-4"
+          href="/gallery"
+          prefetch
+        >
+          Gallery
+        </Link>
         <Link
           className="text-lg font-medium hover:underline underline-offset-4"
           href="/location"

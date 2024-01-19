@@ -14,7 +14,7 @@ import Link from "next/link";
 export default function Room() {
   const pathname = usePathname();
   return (
-    <div className="xl:px-48 px-12 py-24">
+    <div className={cn("xl:px-48 px-12 py-12", pathname && "bg-white")}>
       <h1
         className={cn(
           "text-center font-bold",
@@ -28,19 +28,22 @@ export default function Room() {
       <div className="grid lg:grid-cols-3 grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
         <RoomCard
           title="Non AC Room"
-          image="https://picsum.photos/640/300"
+          link="non-ac"
+          image="/NON AC ROOMs/1.jpeg"
           description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
           voluptatem."
         />
         <RoomCard
           title="Deluxe Room"
-          image="https://picsum.photos/640/300"
+          link={"deluxe"}
+          image="/DELUXE ROOM/1.jpeg"
           description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
           voluptatem."
         />
         <RoomCard
           title="Executive Room"
-          image="https://picsum.photos/640/300"
+          link="executive"
+          image="/EXECUTIVE ROOM/2.jpeg"
           description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
           voluptatem."
         />
@@ -49,7 +52,7 @@ export default function Room() {
   );
 }
 
-function RoomCard({ title, image, description }) {
+function RoomCard({ title, image, description, link }) {
   return (
     <Card className="">
       <img src={image} alt="room" className="p-0 rounded-t-md " />
@@ -62,8 +65,8 @@ function RoomCard({ title, image, description }) {
         </CardDescription>
       </CardContent>
       <CardFooter className="flex  w-full">
-        <Link href="/room/deluxe" className="w-full">
-          <Button className="w-full">View More</Button>
+        <Link href={`/room/${link}`} className="w-full">
+          <Button className="w-full bg-[#A59481]">View More</Button>
         </Link>
       </CardFooter>
     </Card>

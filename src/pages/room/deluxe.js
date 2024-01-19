@@ -16,23 +16,14 @@ export default function Deluxe() {
           showArrows
           infiniteLoop
         >
-          <div className="lg:h-[35rem]sm:h-[15rem] ">
-            <img src="https://picsum.photos/350" />
+          <div className="">
+            <img src="/DELUXE ROOM/1.jpeg" />
           </div>
-          <div className="lg:h-[35rem] sm:h-[15rem]">
-            <img src="https://picsum.photos/350" />
+          <div className="">
+            <img src="/DELUXE ROOM/3.jpeg" />
           </div>
-          <div className="lg:h-[35rem] sm:h-[15rem]">
-            <img src="https://picsum.photos/350" />
-          </div>
-          <div className=" lg:h-[35rem] sm:h-[15rem]">
-            <img src="https://picsum.photos/350" />
-          </div>
-          <div className="lg:h-[35rem] sm:h-[15rem] ">
-            <img src="https://picsum.photos/350" />
-          </div>
-          <div className="lg:h-[35rem] sm:h-[15rem]">
-            <img src="https://picsum.photos/350" />
+          <div className="">
+            <img src="/DELUXE ROOM/2.jpeg" />
           </div>
         </Carousel>
       </div>
@@ -59,7 +50,7 @@ export default function Deluxe() {
         </div>
 
         <div className="flex items-center justify-between mt-20">
-          <p className="text-3xl font-bold">₹4000</p>
+          <p className="text-3xl font-bold">₹3000</p>
           <Link href="/contact">
             <Button size="lg" className="text-lg">
               Contact Us
