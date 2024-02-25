@@ -96,7 +96,7 @@ export default function Contact() {
             We will get back to you as soon as possible.
           </CardDescription>
           <CardFooter className="flex flex-col gap-4">
-            <Button className="w-full" onClick={handleClick}>
+            <Button className="w-full bg-[#A59481]" onClick={handleClick}>
               Submit
             </Button>
           </CardFooter>

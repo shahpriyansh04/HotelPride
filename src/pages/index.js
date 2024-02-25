@@ -13,7 +13,10 @@ import Main from "@/components/Main";
 
 export default function Home() {
   return (
-    <div key="1" className="flex flex-col min-h-screen items-center w-full">
+    <div
+      key="1"
+      className="flex flex-col min-h-screen items-center w-full bg-[#a59481]"
+    >
       <Main />
     </div>
   );

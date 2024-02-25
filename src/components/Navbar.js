@@ -12,10 +12,10 @@ export default function Navbar() {
     setIsOpen(true);
   };
   return (
-    <header className="px-4 py-10 w-full lg:px-12 h-16 flex items-center justify-between  bg-white text-[#926f34] shadow-md">
+    <header className="px-4 py-12 w-full lg:px-12 h-16 flex items-center justify-between  bg-white text-[#926f34] shadow-md">
       <Link className="flex items-center justify-center" href="/">
-        <HotelIcon className="h-6 w-6" />
-        <span className="mx-2 text-2xl font-semibold">Hotel Pride</span>
+        <img src="logo.png" alt="" className="w-24 h-20" />
+        {/* <span className="mx-2 text-2xl font-semibold">Hotel Pride</span> */}
       </Link>
       <MenuIcon onClick={handleClick} className="sm:hidden" />
       <nav className="ml-auto  gap-4 sm:gap-6 hidden sm:flex">
