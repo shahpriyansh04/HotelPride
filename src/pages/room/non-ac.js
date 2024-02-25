@@ -32,9 +32,8 @@ export default function NonAc() {
           <h1 className="text-4xl font-bold">Non-AC Room</h1>
 
           <p className="text-md text-muted-foreground mt-12">
-            Our Deluxe rooms are spacious and offer views of the city. They come
-            equipped with a king-sized bed, a work desk, a mini fridge, and a
-            safe for your valuables.
+            Enjoy a comfortable stay with complimentary WiFi, a king-size bed,
+            LED TV, and a convenient desk and chair setup
           </p>
         </div>
         <div className="flex flex-col  mt-6 gap-5">

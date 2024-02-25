@@ -35,9 +35,12 @@ export default function Executive() {
           <h1 className="text-4xl font-bold">Executive Room</h1>
 
           <p className="text-md text-muted-foreground mt-12">
-            Our Deluxe rooms are spacious and offer views of the city. They come
-            equipped with a king-sized bed, a work desk, a mini fridge, and a
-            safe for your valuables.
+            Ideal for extended stays, our Executive Rooms offer a harmonious
+            blend of luxury and functionality. Enjoy complimentary high-speed
+            WiFi, a lavish king-size bed, premium LED TV, and a spacious
+            workspace with an ergonomic desk and chair, creating the perfect
+            environment for both productivity and relaxation during your
+            extended visit.
           </p>
         </div>
         <div className="flex flex-col  mt-6 gap-5">

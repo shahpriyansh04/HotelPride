@@ -32,9 +32,10 @@ export default function Deluxe() {
           <h1 className="text-4xl font-bold">Deluxe Room</h1>
 
           <p className="text-md text-muted-foreground mt-12">
-            Our Deluxe rooms are spacious and offer views of the city. They come
-            equipped with a king-sized bed, a work desk, a mini fridge, and a
-            safe for your valuables.
+            Experience a touch of luxury with spacious accommodations and modern
+            amenities. Perfect for a relaxing getaway or business trip including
+            complimentary WiFi, a king-size bed, LED TV, and a dedicated work
+            area with desk and chair.
           </p>
         </div>
         <div className="flex flex-col  mt-6 gap-5">

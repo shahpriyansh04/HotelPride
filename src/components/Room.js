@@ -30,22 +30,19 @@ export default function Room() {
           title="Non AC Room"
           link="non-ac"
           image="/NON AC ROOMS/1.jpeg"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptatem."
+          description="Enjoy a comfortable stay with complimentary WiFi, a king-size bed, LED TV, and a convenient desk and chair setup"
         />
         <RoomCard
           title="Deluxe Room"
           link={"deluxe"}
           image="/DELUXE ROOM/1.jpeg"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptatem."
+          description="Experience a touch of luxury with spacious accommodations and modern amenities. Perfect for a relaxing getaway or business trip including complimentary WiFi, a king-size bed, LED TV, and a dedicated work area with desk and chair."
         />
         <RoomCard
           title="Executive Room"
           link="executive"
           image="/EXECUTIVE ROOM/2.jpeg"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptatem."
+          description="Ideal for extended stays, our Executive Rooms offer a harmonious blend of luxury and functionality. Enjoy complimentary high-speed WiFi, a lavish king-size bed, premium LED TV, and a spacious workspace with an ergonomic desk and chair, creating the perfect environment for both productivity and relaxation during your extended visit."
         />
       </div>
     </div>
@@ -60,7 +57,7 @@ function RoomCard({ title, image, description, link }) {
         <CardTitle className="text-2xl">{title}</CardTitle>
       </CardHeader>
       <CardContent>
-        <CardDescription className="text-gray-500 -mt-4">
+        <CardDescription className="text-gray-500 -mt-4 truncate">
           {description}
         </CardDescription>
       </CardContent>
