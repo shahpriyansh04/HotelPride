@@ -40,10 +40,8 @@ export default function NonAc() {
           <p className="font-semibold text-xl">Room Highlights:</p>
           <ul className="list-disc">
             <li>King-sized bed</li>
-            <li>Mini fridge</li>
             <li>Safe</li>
             <li>Work desk</li>
-            <li>Complimentary breakfast</li>
             <li>Complimentary Wi-Fi</li>
           </ul>
         </div>
