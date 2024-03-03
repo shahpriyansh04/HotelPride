@@ -34,10 +34,16 @@ export default function Contact() {
             <div>
               <p className="text-xl font-regular">Phone</p>
               <div className="flex flex-col">
-                <a href="tel:+919819914047" className="font-semibold text-lg">
+                <a
+                  href="tel:+919819914047"
+                  className="font-semibold text-lg text-blue-400"
+                >
                   +91 9819914047
                 </a>
-                <a href="tel:+919819914047" className="font-semibold text-lg">
+                <a
+                  href="tel:+919819914047"
+                  className="font-semibold text-lg text-blue-400"
+                >
                   022 61277302
                 </a>
               </div>
@@ -46,7 +52,7 @@ export default function Contact() {
               <p className="text-xl font-regular">Email</p>
               <a
                 href="mailto:hotelpride05@gmail.com"
-                className="font-semibold text-lg"
+                className="font-semibold text-lg "
               >
                 hotelpride05@gmail.com
               </a>

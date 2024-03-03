@@ -1,6 +1,6 @@
 export default function Features() {
   return (
-    <div className="px-48 grid grid-cols-3 justify-items-center py-12">
+    <div className="px-12 xl:px-48 grid grid-cols-1 md:grid-cols-3 gap-12 justify-items-center py-12">
       <div className="flex flex-col items-center gap-4">
         <img
           src="/Features/supporting.png"

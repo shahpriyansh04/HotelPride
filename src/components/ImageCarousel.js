@@ -11,23 +11,38 @@ export default function ImageCarousel() {
       showArrows
       infiniteLoop
     >
-      <div className="h-[45rem] ">
-        <img src="/CAROUSEL/1.jpeg" className="h-[45rem] object-cover" />
+      <div className="h-[25rem]  xl:h-[45rem] lg:h-[35rem] ">
+        <img src="/CAROUSEL/1.jpeg" className="h-full w-full object-cover" />
       </div>
-      <div className="h-[45rem] ">
-        <img src="/CAROUSEL/2.jpeg" className="h-[45rem] object-cover" />
+      <div className="h-[25rem] xl:h-[45rem] lg:h-[35rem] ">
+        <img
+          src="/CAROUSEL/2.jpeg"
+          className="h-[25rem] xl:h-[45rem] lg:h-[35rem] object-cover"
+        />
       </div>
-      <div className="h-[45rem] ">
-        <img src="/CAROUSEL/3.jpeg" className="h-[45rem] object-cover" />
+      <div className="h-[25rem] xl:h-[45rem] lg:h-[35rem] ">
+        <img
+          src="/CAROUSEL/3.jpeg"
+          className="h-[25rem] xl:h-[45rem] lg:h-[35rem] object-cover"
+        />
       </div>
-      <div className="h-[45rem] ">
-        <img src="/CAROUSEL/4.jpeg" className="h-[45rem] object-cover" />
+      <div className="h-[25rem] xl:h-[45rem] lg:h-[35rem] ">
+        <img
+          src="/CAROUSEL/4.jpeg"
+          className="h-[25rem] xl:h-[45rem] lg:h-[35rem] object-cover"
+        />
       </div>
-      <div className="h-[45rem] ">
-        <img src="/CAROUSEL/5.JPG" className="h-[45rem] object-cover" />
+      <div className="h-[25rem] xl:h-[45rem] lg:h-[35rem] ">
+        <img
+          src="/CAROUSEL/5.JPG"
+          className="h-[25rem] xl:h-[45rem] lg:h-[35rem] object-cover"
+        />
       </div>
-      <div className="h-[45rem] ">
-        <img src="/CAROUSEL/6.jpeg" className="h-[45rem] object-cover" />
+      <div className="h-[25rem] xl:h-[45rem] lg:h-[35rem] ">
+        <img
+          src="/CAROUSEL/6.jpeg"
+          className="h-[25rem] xl:h-[45rem] lg:h-[35rem] object-cover"
+        />
       </div>
     </Carousel>
   );

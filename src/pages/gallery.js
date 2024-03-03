@@ -1,9 +1,9 @@
 export default function Gallery() {
   return (
-    <div className="px-48 py-12">
+    <div className="xl:px-48 px-12 py-12">
       <h1 className="text-3xl font-semibold text-center my-6">Gallery</h1>
 
-      <div className="grid grid-cols-3 w-full gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full gap-12">
         <img src="/LOBBY/7.jpeg" />
         <img src="/LOBBY/8.jpeg" />
         <img src="/LOBBY/10.jpeg" />

@@ -12,7 +12,7 @@ import { cardo, playfair } from "@/pages/_app";
 
 export default function Info() {
   return (
-    <div className="px-48 bg-white py-12 ">
+    <div className="xl:px-48 px-12 bg-white py-12 ">
       <div className="flex-1 flex-col space-y-6  h-full">
         <div className="flex-1">
           <h1 className={`text-3xl font-bold text-center ${cardo.className}`}>

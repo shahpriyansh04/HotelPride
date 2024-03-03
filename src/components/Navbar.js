@@ -84,6 +84,16 @@ export default function Navbar() {
           >
             Rooms
           </Link>
+          <Link
+            className="text-2xl font-medium hover:underline underline-offset-4"
+            href="/gallery"
+            onClick={() => {
+              setIsOpen(false);
+            }}
+            prefetch
+          >
+            Gallery
+          </Link>
 
           <Link
             className="text-2xl font-medium hover:underline underline-offset-4"
