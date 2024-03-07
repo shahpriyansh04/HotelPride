@@ -11,12 +11,23 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
+import { useState } from "react";
 import { Toaster, toast } from "sonner";
 
 export default function Contact() {
-  const handleClick = async () => {
-    const promise = fetch("/api/mail");
+  //create 4 states for name phone email and message
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
 
+  const handleClick = async () => {
+    //fetch the api with the name and email
+    const promise = fetch(
+      `/api/mail?name=${name}&email=${email}&phone=${phone}&message=${message}`
+    );
+
+    // const promise = await fetch(`/api/mail?name=${name}&` )
     toast.promise(promise, {
       loading: "Sending...",
       success: "Sent",
@@ -71,11 +82,19 @@ export default function Contact() {
           <CardContent className="grid gap-5">
             <div>
               <Label>Name</Label>
-              <Input type="text" placeholder="John Doe" className="w-full" />
+              <Input
+                type="text"
+                placeholder="John Doe"
+                className="w-full"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
             </div>
             <div>
               <Label>Email</Label>
               <Input
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 type="email"
                 placeholder="abc@gmail.com"
                 className="w-full"
@@ -85,6 +104,8 @@ export default function Contact() {
               <Label>Phone number</Label>
               <Input
                 type="tel"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
                 placeholder="+91 1234567890"
                 className="w-full"
               />
@@ -95,6 +116,8 @@ export default function Contact() {
                 type="textarea"
                 placeholder="Enter your message here"
                 className="w-full resize-none"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               />
             </div>
           </CardContent>

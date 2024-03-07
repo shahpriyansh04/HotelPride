@@ -1,14 +1,14 @@
 import nodemailer from "nodemailer";
 
-export function mail() {
+export function mail({ name, email, phone, message }) {
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 587,
     service: "gmail",
     secure: false,
     auth: {
-      user: process.env.NEXT_PUBLIC_GMAIL_USER,
-      pass: process.env.NEXT_PUBLIC_GMAIL_PASS,
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS,
     },
   });
 
@@ -16,8 +16,8 @@ export function mail() {
     .sendMail({
       from: "Priyansh Shah <shah.priyansh04@gmail.com>",
       to: "shah.priyansh04@gmail.com",
-      subject: "Hello",
-      text: "Hello World",
+      subject: "Customer Support",
+      text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
     })
     .then(() => console.log("Email sent"))
     .catch((error) => {
